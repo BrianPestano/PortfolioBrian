@@ -693,8 +693,7 @@ footer p a:hover{
 
     .nav-responsive {
         display: flex;
-        align-items: center;
-        flex-wrap: wrap; /* Para permitir múltiples filas si es necesario */
+        
     }
     .nav-responsive .menu-item {
         flex: 1 1 auto;
