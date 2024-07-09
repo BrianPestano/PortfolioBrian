@@ -703,6 +703,10 @@ footer p a:hover{
         display: none;
     }
 
+    .inicio .frase{
+        font-size: 2rem;
+    }
+
     .nav-responsive{
         display: flex;
     }
