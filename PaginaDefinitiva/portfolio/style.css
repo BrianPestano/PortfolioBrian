@@ -676,145 +676,95 @@ footer p a:hover{
         grid-template-columns: max(400px) max(400px);   
     }
 }
-@media screen and (max-width: 850px) {
-    header {
+@media screen and (max-width:850px){
+    header{
         display: block;
         text-align: center;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0,0,0, 0.8);
     }
 
-    nav {
+    nav{
         display: none;
     }
 
-    .inicio .frase {
+    .inicio .frase{
         font-size: 2rem;
     }
 
-    .nav-responsive {
+    .nav-responsive{
         display: flex;
-        
-    }
-    .nav-responsive .menu-item {
-        flex: 1 1 auto;
-        padding: 10px;
-        margin: 5px;
-        text-align: center;
     }
 
-    .nav-responsive .menu-item a {
-        text-decoration: none;
-        color: white;
-        display: block;
-        font-size: 1.5rem; /* Aumenta el tamaño de los íconos/texto */
+    .trabajos .portfolio{
+        grid-template-columns: auto;  
     }
 
-    .trabajos .portfolio {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 2 columnas para dispositivos móviles */
-        gap: 10px; /* Espaciado entre los elementos */
-    }
-
-    .trabajos .portfolio .item {
-        position: relative;
-        width: 100%;
-        height: 200px; /* Ajustar según el tamaño deseado */
-        overflow: hidden; /* Asegurarse de que el contenido que desborde sea ocultado */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .trabajos .portfolio .item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Asegura que la imagen cubra el área del contenedor */
-    }
-
-    .trabajos .portfolio .item .info-trabajo {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0, 0, 0, 0.8);
-        color: white;
-        padding: 10px;
-        text-align: center;
-        transition: opacity 0.3s ease-in-out;
-        opacity: 0;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .portfolio .item:hover .info-trabajo {
-        opacity: 1;
-    }
-
-    .servicios .items-servicios {
+    .servicios .items-servicios{
         grid-template-columns: auto auto;
     }
 
-    .sobre-mi .fila {
+    .sobre-mi .fila{
         display: block;
     }
 
-    .sobre-mi .fila .contenedor-img {
+    .sobre-mi .fila .contenedor-img{
         width: 100%;
     }
 
-    .sobre-mi .fila .contenedor-img img {
+    .sobre-mi .fila .contenedor-img img{
         width: 200px;
         display: block;
         margin: auto;
     }
 
-    .sobre-mi .fila .info {
+    .sobre-mi .fila .info{
         width: 100%;
         margin-top: 30px;
     }
 
-    .curriculum .numeros {
+    .curriculum .numeros{
         display: block;
     }
 
-    .curriculum .contenido .derecha {
+    .curriculum .contenido .derecha{
         right: 0px;
         justify-content: center;
     }
 
-    .curriculum .contenido .izquierda {
+    .curriculum .contenido .izquierda{
         left: 0px;
         justify-content: center;
     }
 
-    .curriculum .numeros {
+    .curriculum .numeros{
         height: auto;
         padding: 30px 0;
     }
 
-    .curriculum .numeros .item {
+    .curriculum .numeros .item{
         margin-bottom: 20px;
     }
 
-    .curriculum .numeros .item .num {
+    .curriculum .numeros .item .num{
         font-size: 3rem;
     }
 
-    .contacto .contenido .fila {
+    .contacto .contenido .fila{
         display: block;
     }
 
-    .contacto .contenido .formulario {
+    .contacto .contenido .formulario{
         display: block;
     }
 
-    .contacto .contenido .formulario .col {
+    .contacto .contenido .formulario .col{
         width: 100%;
         padding: 0 20px;
         margin-bottom: 20px;
     }
 }
-/* Posicion de las banderas de cambio de idioma */
+
+/* Posiciona las banderas de cambio de idioma */
 .lang-switch {
     position: fixed;
     bottom: 20px;
