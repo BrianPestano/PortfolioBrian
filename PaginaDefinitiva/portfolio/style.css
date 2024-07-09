@@ -693,27 +693,26 @@ footer p a:hover{
 
     .nav-responsive {
         display: flex;
-        flex-direction: column;
         align-items: center;
+        flex-wrap: wrap; /* Para permitir múltiples filas si es necesario */
     }
-
     .nav-responsive .menu-item {
+        flex: 1 1 auto;
         padding: 10px;
-        margin: 5px 0;
+        margin: 5px;
         text-align: center;
-        width: 100%; /* Asegura que los elementos del menú ocupen todo el ancho */
     }
 
     .nav-responsive .menu-item a {
         text-decoration: none;
         color: white;
         display: block;
-        width: 100%;
+        font-size: 1.5rem; /* Aumenta el tamaño de los íconos/texto */
     }
 
     .trabajos .portfolio {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas para dispositivos móviles */
+        grid-template-columns: repeat(3, 1fr); /* 2 columnas para dispositivos móviles */
         gap: 10px; /* Espaciado entre los elementos */
     }
 
@@ -816,7 +815,6 @@ footer p a:hover{
         margin-bottom: 20px;
     }
 }
-
 /* Posicion de las banderas de cambio de idioma */
 .lang-switch {
     position: fixed;
