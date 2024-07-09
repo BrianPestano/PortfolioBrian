@@ -44,10 +44,6 @@ document.querySelectorAll('.menu-item').forEach(item => {
             proyecto.style.display = 'block';
         });
     });
-    /*Hacer dos archivos .json ej: es.json para ue desde el js llame a ambos json, ya ue es una mejor practica en el código
-    y lo hace mas limpio, ej: en el codigo de JS se puede hacer ue llame al es.json en donde Español: "es"*/ 
-
-
     
 });document.addEventListener("DOMContentLoaded", function() {
     const langSwitch = document.querySelectorAll(".lang-switch img");
