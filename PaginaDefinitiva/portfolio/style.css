@@ -1,0 +1,796 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'open sans';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* sección INICIO */
+.inicio{
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(img/teidefondo.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.contenido{
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* ENCABEZADO */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header h1 a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+header h1 a:hover{
+    color: #e74452;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    margin: 0 15px;
+} 
+  
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 7px;
+    transition: .3s;
+}
+  
+nav ul li a:hover{
+    background-color: #212121;
+    color: #d04e60; 
+}
+
+.inicio .frase{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: normal;
+    color: #fff;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.inicio .frase .resaltar{
+    font-weight: bold;
+}
+
+.subir{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 2px solid #212121;
+    border-radius: 50%;
+    color: #212121;
+    cursor: pointer;
+    background: rgba(255, 255, 255, .5);
+    z-index: 100;
+}
+
+/* SECCION SOBRE MI */
+.sobre-mi{
+    padding: 70px 0;
+}
+
+.sobre-mi .fila{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-mi .fila .contenedor-img{
+    width: 40%;
+}
+  
+.sobre-mi .fila .contenedor-img img{
+    width: 100%;
+}
+
+.sobre-mi .fila .info{
+    width: 55%;
+    padding: 0px 30px;
+    color: #5f5f5f;
+}
+
+.sobre-mi .fila .info .opciones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sobre-mi .fila .info .opciones button{
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 3px solid #5f5f5f;
+    padding-bottom: 7px;
+    width: 130px;
+    cursor: pointer;
+}
+
+.sobre-mi .fila .info .opciones button.selected{
+    border-bottom: 3px solid #d04e60;
+    color: #d04e60;
+}
+
+.sobre-mi .fila .info .info-opcion{
+    margin-top: 40px;
+}
+
+.sobre-mi .fila .info .info-opcion h2{
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.color{
+    color: #d04e60;
+}
+
+.sobre-mi .fila .info .info-opcion p{
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+#info-sobre-mi{
+    display: block;
+}
+
+#info-skills{
+    display: none;
+}
+
+.sobre-mi .fila .info .info-opcion .skill{
+    margin-bottom: 20px;
+}
+
+.sobre-mi .fila .info .info-opcion .skill .texto{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-mi .fila .info .info-opcion .skill .contenedor-barra{
+    background-color: #c7c6c6;
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sobre-mi .fila .info .info-opcion .skill .contenedor-barra .relleno{
+    height: 10px;
+    position: absolute;
+    width: 0;
+    background-color: #d04e60;
+}
+
+@keyframes animHtmlycss {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+@keyframes animKotlin {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+@keyframes animJava {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+@keyframes animPython {
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+@keyframes animMySQL {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+@keyframes animCsynet {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+/* TRABAJOS */
+.trabajos{
+    padding: 70px 0;
+}
+
+.titulo-seccion{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.trabajos .portfolio{
+    display: grid;
+    grid-template-columns: max(350px) max(350px) max(350px);
+    justify-content: space-around;
+    grid-gap: 40px;
+}
+
+.trabajos .portfolio .item{
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.trabajos .portfolio .item img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.trabajos .portfolio .item .info-trabajo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(208, 78, 96,.9),rgba(240, 192, 199, 0.8));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    scale: 0;
+    transition: .5s;
+    color: #fff;
+}
+
+.trabajos .portfolio .item .info-trabajo h2{
+    margin-bottom: 10px;
+}
+
+.trabajos .portfolio .item .info-trabajo p{
+    margin-bottom: 10px;
+}
+
+.trabajos .portfolio .item .info-trabajo button{
+   background-color: #000;
+   color: #fff;
+   padding: 10px 15px;
+   border-radius: 30px;
+   border: none;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.trabajos .portfolio .item:hover .info-trabajo{
+    opacity: 1;
+    scale:1;
+}
+/* SECCION CURRICULUM */
+.curriculum {
+    padding: 10px 0; 
+    max-width: 1100px;
+    margin: auto;
+    color: #ffffff;
+    position: relative; 
+    text-align: center; 
+}
+
+.curriculum .contenido {
+    padding: 20px 0; 
+    max-width: 1500px; 
+    margin: auto;
+    color: #000000;
+    text-align: center; 
+}
+
+/* Estilos para el texto "¿QUIERES VER MI CURRICULUM?" */
+.curriculum .contenido h2 {
+    margin-bottom: 40px; 
+    font-size: 32px; 
+}
+
+.curriculum .numeros {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .7)), url(img/teidefondo.jpg);
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.curriculum .numeros .numero {
+    text-align: center;
+}
+
+.curriculum .numeros .numero h3 {
+    font-size: 40px;
+    color: #d04e60;
+}
+
+.curriculum .numeros .numero p {
+    font-size: 20px;
+}
+
+.curriculum .fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.curriculum .col {
+    width: 100%;
+}
+
+.curriculum .col .contenedor-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.curriculum header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.curriculum header .logo i {
+    font-size: 50px;
+    color: #d04e60;
+}
+
+.curriculum header .logo h1 {
+    margin-left: 15px;
+    color: #d04e60;
+}
+
+.curriculum .numeros .item {
+    text-align: center;
+}
+
+.curriculum .numeros .item .num {
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #d04e60;
+    line-height: 4rem;
+}
+
+.curriculum .numeros .item .txt {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.curriculum .contenido .recorrido-anios {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.curriculum .contenido .derecha {
+    display: flex;
+    justify-content: center; 
+}
+
+.curriculum .contenido .izquierda {
+    display: flex;
+    justify-content: center; 
+}
+
+.curriculum .contenido .recorrido-anios .dato {
+    max-width: 400px;
+    display: grid;
+    align-items: center;
+}
+
+.curriculum .contenido .recorrido-anios .dato-der {
+    grid-template-columns: 80px 50px auto;
+}
+
+.curriculum .contenido .recorrido-anios .dato-izq {
+    grid-template-columns: auto 50px 80px;
+}
+
+.curriculum .contenido .recorrido-anios .dato .anio {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.curriculum .contenido .recorrido-anios .dato .linea {
+    height: 10px;
+}
+
+.curriculum .contenido .recorrido-anios .dato .info {
+    font-size: 16px;
+    padding: 10px;
+    color: #fff;
+}
+
+.curriculum .contenido .recorrido-anios .dato .info h3 {
+    font-size: 16px;
+}
+
+.curriculum .contenido .recorrido-anios .dato .info p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/* Estilos para el botón */
+.curriculum .contenido .btn {
+    padding: 20px 40px; 
+    font-size: 24px; 
+    border: 2px solid #d04e60; 
+    background-color: transparent; 
+    color: #d04e60; 
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+/* Estilos cuando el botón está en hover */
+.curriculum .contenido .btn:hover {
+    background-color: #d04e60; 
+    color: #fff; 
+}
+
+.c1 {
+    background-color: #e74452;
+}
+
+.c2 {
+    background-color: #df792b;
+}
+
+.c3 {
+    background-color: #16a8a5;
+}
+
+.c4 {
+    background-color: #0e526f;
+}
+
+.b1 {
+    border: 10px solid #e744
+}
+
+/* SECCION CONTACTO */
+.contacto{
+    padding: 70px 0;
+}
+
+.contacto .fila{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.contacto .fila .item{
+    text-align: center;
+}
+
+.contacto .fila .item .icono{
+    font-size: 40px;
+    color: #d04e60;
+    margin-bottom: 15px;
+}
+
+.contacto .fila .item h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contacto .fila .item p{
+    font-size: 16px;
+    color: #5f5f5f;
+}
+
+.contacto .formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.contacto .formulario .col{
+    width: 100%;
+}
+
+.contacto .formulario .fila-input{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacto .formulario .fila-input .input{
+    width: 48%;
+}
+
+.contacto .formulario .input{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.contacto .formulario .input i{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #d04e60;
+}
+
+.contacto .formulario .input input,
+.contacto .formulario .input textarea{
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #d04e60;
+    border-radius: 20px;
+    outline: none;
+    color: #5f5f5f;
+    font-size: 16px;
+}
+
+.contacto .formulario .input textarea{
+    resize: none;
+    height: 150px;
+}
+
+.contacto .formulario .input input::placeholder,
+.contacto .formulario .input textarea::placeholder{
+    color: #c7c6c6;
+}
+
+.contacto .formulario .btn{
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #d04e60;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contacto .formulario .btn:hover{
+    background-color: #b03a4b;
+}
+
+/* FOOTER */
+footer{
+    padding: 20px 0;
+    background-color: #212121;
+    text-align: center;
+}
+
+footer h2{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+footer .redes{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer .redes .red{
+    margin: 0 10px;
+}
+
+footer .redes .red a{
+    color: #fff;
+    font-size: 24px;
+    transition: .3s;
+}
+
+footer .redes .red a:hover{
+    color: #d04e60;
+}
+
+footer{
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+    background: #212121;
+    color: #fff;
+}
+
+footer h2{
+    margin-bottom: 30px;
+}
+
+footer .red{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 10px;
+}
+
+.r1{
+    background: #3e5294;
+}
+
+.r2{
+    background: #64a8e4;
+}
+
+.r3{
+    background: #16a8a5;
+}
+
+.r4{
+    background: #e74452; 
+}
+
+footer p{
+    margin-top: 30px;
+}
+
+footer p a{
+    color: #d04e60;
+    text-decoration: none;
+}
+
+footer p a:hover{
+    text-decoration: underline;
+}
+
+/* MENU RESPONSIVO */
+.nav-responsive{
+    display: none;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nav-responsive a{
+    text-decoration: none;
+    color: #e74452;
+    font-size: 30px;
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:1130px){
+    .trabajos .portfolio{
+        grid-template-columns: max(400px) max(400px);   
+    }
+}
+
+@media screen and (max-width:850px){
+    header{
+        display: block;
+        text-align: center;
+        background: rgba(0,0,0, 0.8);
+    }
+
+    nav{
+        display: none;
+    }
+
+    .nav-responsive{
+        display: flex;
+    }
+
+    .trabajos .portfolio{
+        grid-template-columns: auto;  
+    }
+
+    .servicios .items-servicios{
+        grid-template-columns: auto auto;
+    }
+
+    .sobre-mi .fila{
+        display: block;
+    }
+
+    .sobre-mi .fila .contenedor-img{
+        width: 100%;
+    }
+
+    .sobre-mi .fila .contenedor-img img{
+        width: 200px;
+        display: block;
+        margin: auto;
+    }
+
+    .sobre-mi .fila .info{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .curriculum .numeros{
+        display: block;
+    }
+
+    .curriculum .contenido .derecha{
+        right: 0px;
+        justify-content: center;
+    }
+
+    .curriculum .contenido .izquierda{
+        left: 0px;
+        justify-content: center;
+    }
+
+    .curriculum .numeros{
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .curriculum .numeros .item{
+        margin-bottom: 20px;
+    }
+
+    .curriculum .numeros .item .num{
+        font-size: 3rem;
+    }
+
+    .contacto .contenido .fila{
+        display: block;
+    }
+
+    .contacto .contenido .formulario{
+        display: block;
+    }
+
+    .contacto .contenido .formulario .col{
+        width: 100%;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Posiciona las banderas de cambio de idioma */
+.lang-switch {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lang-switch img {
+    width: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.lang-switch img:hover {
+    transform: scale(1.1);
+}
